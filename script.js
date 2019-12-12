@@ -26,13 +26,17 @@ var $ = function(id) {
 // };
 
 function calculateTip() {
+    
+    // $("tipResults").innerHTML = "button has been clicked";
+
     var bill = parseFloat($("billAmount").value);
     var partyNumber = parseFloat($("partyAmount").value);
     var tipAmount = $("tipPercentages").value;
     var newTipPercent = tipAmount/100;
     var tipPerPerson = (bill / partyNumber) * newTipPercent;
-    totalTip = tipPerPerson.toFixed(2);
-    $("tipResults").innerHTML = "with a bill of $" + bill + " and " + partyNumber + ", each person owes $" + totalTip + ".";
+    var totalTip = tipPerPerson.toFixed(2);
+    $("tipResults").style.display = "block";
+    $("tipResults").innerHTML = "With a bill of $" + bill + " and " + partyNumber + ", each person owes $" + totalTip + ".";
     //return totalTip;
 };
 
