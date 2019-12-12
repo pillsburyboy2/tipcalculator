@@ -1,0 +1,17 @@
+body {
+    background-color: gray;
+}
+#container {
+    max-width: 960px;
+    /* width: 100%; */
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+}
+#tipResults {
+    padding: 15px;
+    font-weight: bold;
+    background-color: beige;
+    margin-top: 12px;
+    display: none;
+}

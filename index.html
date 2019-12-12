@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Mike Adams Super Spiffy Tip Calculator</title>
 </head>
 <body>
-    <h1>Tip Calculator</h1>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <label>Bill Amount</label>
+        <input type="text" id="billAmount" onchange="checkTextInput()">
+        <span id="billError">*</span><br>
+        <label>Number of People</label>
+        <input type="text" id="partyAmount" onchange="checkTextInput()">
+        <span id="partyError">*</span><br>
+        <label>Tip Amount</label>
+        <select>
+            <option value="30">30% - Amazing Service</option>
+            <option value="20">20% - Great Service</option>
+            <option value="15">15% - Good Service</option>
+            <option value="10">10% - Poor Service</option>
+        </select>
+        <input type="button" value="Calculate Tip" onclick="calculateTip">
+        <div id="tipResults"></div>
+    </div>
 </body>
 </html>
