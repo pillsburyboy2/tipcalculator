@@ -15,3 +15,7 @@ body {
     margin-top: 12px;
     display: none;
 }
+
+span {
+    color: red;
+}

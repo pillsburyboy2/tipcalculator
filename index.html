@@ -11,20 +11,21 @@
     <div id="container">
         <h1>Tip Calculator</h1>
         <label>Bill Amount</label>
-        <input type="text" id="billAmount" onchange="checkTextInput()">
+        <input type="text" id="billAmount" >
         <span id="billError">*</span><br>
         <label>Number of People</label>
-        <input type="text" id="partyAmount" onchange="checkTextInput()">
+        <input type="text" id="partyAmount" >
         <span id="partyError">*</span><br>
         <label>Tip Amount</label>
-        <select>
+        <select id="tipPercentages" name="tipPercentages">
             <option value="30">30% - Amazing Service</option>
             <option value="20">20% - Great Service</option>
             <option value="15">15% - Good Service</option>
             <option value="10">10% - Poor Service</option>
         </select>
-        <input type="button" value="Calculate Tip" onclick="calculateTip">
-        <div id="tipResults"></div>
+        <input type="button" value="Calculate Tip" onclick="calculateTip()">
+        <p id="tipResults"></p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
