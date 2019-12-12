@@ -1,2 +1,3 @@
-# tipcalculator
+# Tip Calculator
 This is a demo tip calculator in JS. We are using VS Code for this.
+We are setting this app up for a JavaScript class. This is just the beginning...
